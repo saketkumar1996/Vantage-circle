@@ -7,7 +7,8 @@
       [infiniteScrollThrottle]="1"
       (scrolled)="onScroll()"
     >
-<div *ngFor="let obj of urlArray" class="p-4 w-1/3" >
+<div class=" flex flex-row flex-wrap p-4">
+<div *ngFor="let obj of urlArray" class="basis-1/3" >
     <!-- <img src={{obj.download_url}}  alt=""> -->
     <!-- <h1>{{obj.download_url}}</h1> -->
     <!-- <section class="text-gray-600 body-font"> -->
@@ -28,5 +29,7 @@
 
       <!-- </section> -->
 </div>
+</div>
+
 
 </div>
